@@ -8,13 +8,19 @@ Once a week the system texts *you* a prompt for each upcoming birthday. You repl
 
 Runs entirely on macOS built-ins (Contacts, Messages, `launchd`, `sqlite3`, `python3`). No third-party services, no APIs, nothing paid.
 
+## Requirements
+
+- **A Mac with iMessage set up.** Messages must be signed into your Apple ID and able to send texts from this Mac. This recipe drives the Messages app directly, so it only works on macOS, not on Windows, Linux, or a phone alone.
+- **Set up iMessage sending first.** Before running this, install the [`imessage` skill](https://github.com/nataliacorrea03/claude-code-skills/tree/main/skills/imessage) from the companion repo. It walks you through (and verifies) the exact macOS permissions iMessage sending needs. This recipe builds scheduled birthday sending on top of that same mechanism, so getting the permissions sorted there first saves you the headache here.
+
 ## How to use this recipe
 
 1. Open Claude Code on your Mac.
-2. Copy everything below the line and paste it as your prompt.
-3. Answer anything it asks (your phone number, who to exclude).
-4. Grant the macOS permissions it requests (see the permissions section in the prompt).
-5. Let it run the weekly script once so you can confirm the prompt text lands before trusting the schedule.
+2. Make sure iMessage sending works (see Requirements above).
+3. Copy everything below the line and paste it as your prompt.
+4. Answer anything it asks (your phone number, who to exclude).
+5. Grant the macOS permissions it requests (see the permissions section in the prompt).
+6. Let it run the weekly script once so you can confirm the prompt text lands before trusting the schedule.
 
 The prompt is written in the first person on purpose, so you can paste it as if you are the one asking.
 
