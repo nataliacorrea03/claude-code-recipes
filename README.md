@@ -13,6 +13,7 @@ This is the companion to my [claude-code-skills](https://github.com/nataliacorre
 |--------|--------------|---------|
 | [Birthday text auto-sender](recipes/birthday-text-autosender.md) | A system that texts your contacts on their birthday, but only ever sends words you personally wrote and approved. It texts you a prompt each week; you reply with the message; it forwards your exact words on the day. | macOS (local, no third-party services) |
 | [FITFO: a decision-forcing skill](recipes/fitfo-decision-forcer.md) | Installs `/fitfo` (Figure It The F Out): when you're stuck, it reframes the real problem, runs four creative passes, stress-tests with a critic, and returns one committed recommendation with every artifact drafted. Never a menu. | Any Claude Code setup |
+| [Agent impact instrumentation](recipes/agent-impact-instrumentation.md) | A layer that measures how much time your scheduled Claude Code routines actually save you, then renders it into a shareable dashboard. Built around one rule: numbers it can prove are kept separate from numbers it estimates, never blended into one impressive-but-fake figure. | Claude Code with scheduled routines + Notion |
 
 ## How to use a recipe
 
